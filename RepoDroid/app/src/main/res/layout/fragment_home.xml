@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/v2_primary_bg"
+    android:layout_height="match_parent"
+    >
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/home_material_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Welcome to Repo Droid"
+        android:gravity="center"
+        android:background="@drawable/app_bar_drawable"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginVertical="8dp"
+        app:titleCentered="true"
+        app:titleTextColor="@color/primary_swift" >
+        <ImageView
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/github_mark_white"
+            android:layout_gravity="end"
+            android:layout_marginEnd="4dp"
+            android:contentDescription="Repo Droid" />
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/track_repo_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:lottie_autoPlay="true"
+        app:lottie_renderMode="automatic"
+        app:lottie_loop="true"
+        android:visibility="invisible"
+        app:lottie_rawRes="@raw/nothin" />
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_repo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/v2_secondary_color"
+        android:contentDescription="@string/add"
+        android:scaleType="center"
+        android:src="@drawable/baseline_add_24"
+        android:text="@string/add"
+        android:visibility="visible"
+        app:maxImageSize="46dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/repo_recycler_view"
+        android:visibility="visible"
+        tools:listitem="@layout/single_repo_item"
+        tools:itemCount="1"
+        android:layout_below="@id/home_material_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

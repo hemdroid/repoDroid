@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/v2_primary_bg"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.39"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.9"
+        app:lottie_autoPlay="true"
+        app:lottie_renderMode="automatic"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/network_lost" />
+
+    <Button
+        android:id="@+id/retryBtn"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.13"
+        android:backgroundTint="#FFDE54"
+        android:text="@string/retry"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:layout_marginBottom="24dp"
+        android:layout_marginHorizontal="48dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView6" />
+
+</LinearLayout>
