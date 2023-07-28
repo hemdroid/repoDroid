@@ -1,0 +1,85 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.RepoDroid" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Version2" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/primary_swift</item>
+        <item name="colorPrimaryVariant">@color/primary_swift</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/v2_primary_bg</item>
+        <item name="colorSecondaryVariant">#24292C</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:elevation">0dp</item>
+        <item name="android:statusBarColor" >@color/primary_swift</item>
+        <item name="actionBarStyle">@style/action_bar</item>
+        <!-- Customize your theme here. -->
+        <item name="android:fontFamily">@font/montserrat</item>
+
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="color">@color/white</item>
+    </style>
+
+    <style name="ThemeOverlay.App.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorPrimary">#ffe88a</item>
+        <item name="colorSecondary">#ffe88a</item>
+        <item name="colorSurface">#ffe88a</item>
+        <item name="colorOnSurface">#ffe88a</item>
+        <item name="android:background">#3A3939</item>
+        <item name="alertDialogStyle">@style/MaterialAlertDialog.App</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/MaterialAlertDialog.App.Title.Text
+        </item>
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.App.Button</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.App.Button</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App" parent="MaterialAlertDialog.Material3">
+        <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
+        <item name="shapeAppearanceOverlay">@null</item>
+    </style>
+
+    <style name="MaterialAlertDialog.App.Title.Text" parent="MaterialAlertDialog.Material3.Title.Text">
+        <item name="android:textColor">#fff0b0</item>
+    </style>
+
+    <style name="Widget.App.Button" parent="Widget.Material3.Button.TextButton.Dialog">
+        <item name="android:textColor">#fff0b0</item>
+    </style>
+
+    <style name="ShapeAppearance.App.MediumComponent" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
+
+    <style name="EditTextStyleTheme" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:colorControlActivated">#FFF0B0</item>
+    </style>
+
+    <style name="action_bar" parent="Theme.Material3.Dark">
+        <item name="color">@color/white</item>
+        <item name="theme">@style/app_bar_icon</item>
+    </style>
+
+    <style name="app_bar_icon" parent="MyActionBarTheme">
+        <item name="icon">@drawable/ic_arrow_left_v2</item>
+        <item name="iconGravity">start</item>
+        <item name="iconStartPadding">24dp</item>
+    </style>
+
+    <style name="MyActionBarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="backgroundColor">@color/v2_primary_bg</item>
+        <item name="colorPrimary">@color/v2_primary_bg</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_left_v2</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="titleMargin">24dp</item>
+    </style>
+
+
+    <style name="Theme.RepoDroid" parent="Base.Theme.RepoDroid" />
+</resources>

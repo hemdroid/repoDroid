@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Repo Droid</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add">Add</string>
+    <string name="track_your_favourite_repository">Track your favourite repository</string>
+    <string name="owner">owner</string>
+    <string name="owner_">owner : </string>
+    <string name="Repositoryname">Repository</string>
+    <string name="continuee">continue</string>
+    <string name="retry">Retry</string>
+    <string name="description">Repository : </string>
+    <string name="repository_name">repository name</string>
+    <string name="no">No</string>
+    <string name="openInBrowser">Do you want to open this in your browser?</string>
+    <string name="yes">Yes</string>
+</resources>
